@@ -36,6 +36,7 @@ int main() {
     while( negativeToPositive(currentValueFunctionValue) > limitValue ){
         double currentValue = (firstValue + secondValue) / 2;
         currentValueFunctionValue = calculateFunctionValue(currentValue,equationX5,equationX4,equationX3,equationX2,equationX1,equationConstant);
+        firstValueFunctionValue = calculateFunctionValue(firstValue,equationX5,equationX4,equationX3,equationX2,equationX1,equationConstant);
         if(firstValueFunctionValue * currentValueFunctionValue < 0){
             secondValue = currentValue;
         } else {
