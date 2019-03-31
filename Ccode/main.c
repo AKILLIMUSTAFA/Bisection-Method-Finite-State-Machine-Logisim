@@ -30,9 +30,8 @@ int main() {
     double limitValue = 0.00001;
 
     double firstValueFunctionValue = calculateFunctionValue(firstValue,equationX5,equationX4,equationX3,equationX2,equationX1,equationConstant);
-    double secondValueFunctionValue = calculateFunctionValue(secondValue,equationX5,equationX4,equationX3,equationX2,equationX1,equationConstant);
-
-    double currentValueFunctionValue = secondValueFunctionValue;
+    
+    double currentValueFunctionValue = firstValueFunctionValue;
     while( negativeToPositive(currentValueFunctionValue) > limitValue ){
         double currentValue = (firstValue + secondValue) / 2;
         currentValueFunctionValue = calculateFunctionValue(currentValue,equationX5,equationX4,equationX3,equationX2,equationX1,equationConstant);
